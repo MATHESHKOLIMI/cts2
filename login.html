@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        body{
+            text-align: center;
+            background-image: url('WashingtonDC4.jpeg');
+            background-size: cover;
+        }
+        label a{
+            
+            padding: 8px;
+            background-color: blue;
+            color:white;
+            display: flex;
+            text-align: center;
+            text-decoration: none;
+        }
+        label a:hover{
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+        }
+        button{
+            padding:3px;
+            margin:0;
+            background-color: skyblue;
+            color:black;
+        }
+        form{
+            text-align: left;
+        }
+        input{
+            padding: 5px;
+            stroke-opacity: initial;
+            
+            background-color: skyblue;
+            color:black;
+        }
+        </style>
+    </head>
+    <body >
+        <script>
+            function alerting(form1){
+                if(form1.mail.value==''||form1.username.value==''||form1.password.value==''||form1.passwordre.value=='')
+                {
+                    alert("add " +"field and try again");
+                    return false;
+                }
+                else{
+                    return true;
+                }
+
+            }
+        </script>
+        <div class="container">
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <div>
+            <form id="form1" name="form1" onsubmit="return alerting(this)" action="Success-Login.html">
+        <fieldset>
+            <legend style="text-align: left;">Sign up</legend>
+            
+            <label><b>mail id</b></label><br> <input type="email" name="mail" id="1"  placeholder="enter mail" ><br>
+            <label><b>username</b></label><br><input type="text" name="username" id="2"  placeholder="enter username"  ><br>
+            <label><b></b>password</b></label><br><input type="password"  name="password"id="1" placeholder="enter password" ><br>
+            <label><b>re enter</b></label><br><input type="password" id="1" name="passwordre"placeholder="reenter password" ><br>
+            <div><b>select gender</b> <br>
+            male<input type="radio" name="gender" id="5" value="male">
+            female<input type="radio" name="gender" id="6" value="female"><br>
+            <button type="submit" >signup</button>
+            <button type="reset"> reset</button> 
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+                <label><b>if you have already an account</b></label>
+                <a href="Success-Login.html"><button type="button" formaction="Success-Login.html"> login </button></a>
+            
+
+
+        </fieldset>
+        </form>
+        </div>
+        </div>
+    </body>
+</html>

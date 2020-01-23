@@ -1,0 +1,49 @@
+<html>
+    <style>
+        input{
+            width:100%;
+            padding:12px,20px;
+            background-color: skyblue;
+            color: black;
+        }
+        button{
+            width: 100%;
+            background-color: rgb(14, 85, 14);
+            color: black;
+        }
+    </style>
+<head>
+<style>
+body{
+    background-image: url('WashingtonDC4.jpeg');
+}
+</style>
+</head>
+<script>
+    function verifying(form){
+        if(form.username.value==''||form.password.value==''){
+            alert("please fill all the fields and  try again");
+            return false;
+        }
+    }
+</script>
+<body><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <form action="Success-Login.html" onsubmit="return verifying(this)">
+        <fieldset>
+            <legend>login </legend>
+        <div>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="abc@gmail.com" ><br>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="enter  password" ><br>
+    <br>
+    <br>
+    <button type="submit" onclick="" >login</button>
+    </div>
+</fieldset>
+    </form>
+</body>
+</html>
